@@ -2,6 +2,14 @@
     font-family: 'Oswald';
     src: url('Oswald.ttf') format('truetype'); 
 }
+@font-face  {
+    font-family: 'Exo2-SemiBold';
+    src: url('Exo2-SemiBold.ttf') format('truetype'); 
+}
+@font-face  {
+    font-family: 'Exo2-ExtraBoldItalic';
+    src: url('Exo2-ExtraBoldItalic.ttf') format('truetype'); 
+}
 
 body {
     bottom: 0;
@@ -99,6 +107,15 @@ a {
     text-transform: uppercase;
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.projects a {
+    margin-right: 20px;
+}
+
 .projects img {
     border-radius: 10px;
     width: 250px;
@@ -150,6 +167,15 @@ footer {
 .game {
     display: flex;
 }
+
+.jb9game {
+    display: block !important;
+}
+
+.jb9game img {
+    width: 329px !important;
+}
+
 .game h2 {
     margin-left: 0;
 }
@@ -182,6 +208,10 @@ footer {
 }
 
 @media (max-width: 950px) {
+    .projects {
+        display: inline-block;
+    }
+
     #news {
         width: 90%;
     }
